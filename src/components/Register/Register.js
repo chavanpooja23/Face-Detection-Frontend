@@ -1,7 +1,5 @@
 import React from 'react';
 
-const baseURL = "https://face-detection-api-itfn.onrender.com"
-
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch(`${baseURL}`, {
+    fetch("https://face-detection-api-itfn.onrender.com", {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
